@@ -1,0 +1,1 @@
+This folder contains files changed/added from the base template to allow an external LED to blink through an interrupt signal without HAL. 
