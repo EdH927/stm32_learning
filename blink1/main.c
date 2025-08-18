@@ -68,7 +68,7 @@ int main(void)
 	RCC_APBENR1 |= RCC_TIM2_EN;
 
 	// Set TIM2 Params
-	TIM2_PSC = 47999U;
+	TIM2_PSC = 47999U; // This is to set the frequency from 48 MHz to 1 kHz
 	TIM2_ARR = TIM2_CNTRST;
 	TIM2_CNT = 0U;
 	TIM2_EGR |= TIM2_EGR_UG;
@@ -100,3 +100,4 @@ void TIM2_IRQHandler(void) {
 		  TIM2_SR = ~TIM2_SR_UIF;
 	  }
 }
+
